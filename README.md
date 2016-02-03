@@ -1,10 +1,15 @@
-# Animação Web Viral para promoção do Combate aos mosquitos Aedes Aegypti
+# Aedes Aegypti: plugin WordPress para promoção do combate ao mosquito
 
-O usuário ao clicar em um dos mosquistos será redirecionado ao site http://combateaedes.saude.gov.br  cujo contém informações e orientações para o combate aos mosquitos.
+Este é um plugin WordPress baseado no [viral de combate ao *Aedes aegypti*](http://hackerativismo.github.io/viral-aedes-aegypti/).
+
+O usuário, ao clicar em um dos mosquistos na capa do site, será redirecionado ao site http://combateaedes.saude.gov.br, que contém informações e orientações para o combate ao *Aedes aegypti*.
 
 Demostração no link: http://hackerativismo.github.io/viral-aedes-aegypti/
 
-## Agredecimento e Créditos
+## //TODO
+* Limpar arquivos desnecessários! :smile:
+
+## Agredecimento e Créditos (versão original)
 
 * Aurélio A. Heckert @aurium - Programmer at Colivre.coop.br
 * Caio S.B. Almeida @caiosba - Consultor Devel
