@@ -36,7 +36,7 @@ $(window).ready(function() {
 
                 // Caso a estrutura não tenha sido criada
                 if (!$('#aegypti-intervencao').length) {
-                    $(document.body).append('<div id="aegypti-intervencao"><a href="http://combateaedes.saude.gov.br/" id="aegypti-banner" target="_blank" title="Faça sua parte"><img src="' + wp_aedes_aegypti.pluginUrl + '/aviso.png" alt="Não adianta apenas matar o mosquito. Não podemos deixar ele nascer. E isso depende de todos nós." /></a><a href="#" id="aegypti-close" title="Fechar">Fechar</a></div>');
+                    $(document.body).append('<div id="aegypti-intervencao"><a href="'+ wp_aedes_aegypti.destUrl +'" id="aegypti-banner" target="_blank" title="'+ wp_aedes_aegypti.title +'"><img src="' + wp_aedes_aegypti.pluginUrl + '/aviso-'+wp_aedes_aegypti.lang+'.png" alt="'+ wp_aedes_aegypti.alt +'" /></a><a href="#" id="aegypti-close" title="'+ wp_aedes_aegypti.close +'">'+ wp_aedes_aegypti.close +'</a></div>');
 
                     $('#aegypti-intervencao #aegypti-banner').focus();
                     $('#aegypti-intervencao a').on("click", function() {

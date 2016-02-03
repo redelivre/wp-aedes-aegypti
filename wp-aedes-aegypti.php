@@ -15,8 +15,29 @@ Domain Path: /languages
 
 function wp_aedes_aegypti() {
 	wp_enqueue_script( 'wp_aedes_aegypti', plugin_dir_url(__FILE__) . 'aedes.js', array( 'jquery') );
-	wp_localize_script('wp_aedes_aegypti', 'wp_aedes_aegypti', array( 'pluginUrl' => plugin_dir_url( __FILE__ )));
+	wp_localize_script('wp_aedes_aegypti', 'wp_aedes_aegypti', array(
+			'pluginUrl' => plugin_dir_url( __FILE__ ),
+			'destUrl' => 'http://combateaedes.saude.gov.br/',
+			'title' => __('Faça sua parte', 'wp_aedes_aegypti'),
+			'alt' => __('Não adianta apenas matar o mosquito. Não podemos deixar ele nascer. E isso depende de todos nós.', 'wp_aedes_aegypti'),
+			'lang' => get_locale(),
+	));
+	
 	wp_enqueue_style('wp_aedes_aegypti', plugin_dir_url(__FILE__) . 'aedes.css');
 }
 add_action( 'wp_enqueue_scripts', 'wp_aedes_aegypti' );
 
+
+/**
+ * Load plugin textdomain.
+ *
+ * @since 1.0.0
+ */
+function wp_aedes_aegypti_load_textdomain()
+{
+	if(! load_plugin_textdomain( 'wp_aedes_aegypti', false,  '/wp-aedes-aegypti/languages' ))
+	{
+		wp_die('translate error!');
+	}
+}
+add_action( 'plugins_loaded', 'wp_aedes_aegypti_load_textdomain' );
