@@ -8,6 +8,8 @@ $(window).ready(function() {
 	'left center; }' +
 	'.flyAE { animation: play .2s steps(6) infinite; }' +
 	'.aegypti { cursor: url("'+ wp_aedes_aegypti.pluginUrl +'/raquete.png") 30 35, pointer; }' +
+	'a.aegypti { cursor: url("'+ wp_aedes_aegypti.pluginUrl +'/raquete.png") 30 35, pointer; }' +
+	'a.aegypti:hover { cursor: url("'+ wp_aedes_aegypti.pluginUrl +'/raquete.png") 30 35, pointer; }' +
 	'@keyframes play { 100% { background-position: -360px; } }' +
 	'.rotateAE { background-position: 180px; }' +
 	'@media (min-width: 940px) { body #aegypti-intervencao #aegypti-close { width: 42px; height: 42px; margin-left: 348px; top: 42px; left: 50%; } }' +
