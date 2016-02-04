@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp_aedes_aegypti Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-03 22:37-0300\n"
+"POT-Creation-Date: 2016-02-03 23:48-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jacson Passold <jacson@ethymos.com.br>\n"
 "Language-Team: \n"
@@ -19,6 +19,18 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPath-1: .\n"
+
+#: ../options.php:26 ../options.php:27
+msgid "WP Aedes Aegypti"
+msgstr "WP Aedes Aegypti"
+
+#: ../options.php:45
+msgid "Página de configuração do plugin wp-aedes-aegypti"
+msgstr "La página de configuración del plugin wp-aedes-aegypti"
+
+#: ../options.php:54 ../options.php:69 ../options.php:87 ../options.php:94
+msgid "Url de destino da campanha"
+msgstr "Campaña URL de destino"
 
 #: ../wp-aedes-aegypti.php:21
 msgid "Faça sua parte"
@@ -43,3 +55,6 @@ msgstr "#ZicaCero"
 #: ../wp-aedes-aegypti.php:27
 msgid "Fechar"
 msgstr "Cerrar"
+
+#~ msgid "wp aedes aegypti config"
+#~ msgstr "WP Aedes Aegypti config"

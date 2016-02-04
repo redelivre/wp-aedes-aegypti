@@ -42,7 +42,7 @@ class WPAedesAegyptiSettingsPage
 		$this->options = get_option( 'wp-aedes-aegypti', array() );
 		?>
         <div class="wrap">
-            <h2><?php _e('wp aedes aegypti config', 'wp_aedes_aegypti') ?></h2>           
+            <h2><?php _e('Página de configuração do plugin wp-aedes-aegypti', 'wp_aedes_aegypti') ?></h2>           
             <form method="post" action="options.php">
             <?php
                 // This prints out all hidden setting fields
