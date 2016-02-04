@@ -106,9 +106,9 @@ class WPAedesAegyptiSettingsPage
      */
     public function sanitize( $input )
     {
-        $new_input = array();
+        $new_input = esc_url_raw($input);
         
-        return $input;
+        return $new_input;
     }
 
 }
