@@ -64,21 +64,6 @@ $(window).ready(function() {
       	      animateAedes(mosquito);
   	      }, Math.pow(i*2,2)*1000);
 	    }
-
-	    if (!$('#aegypti-intervencao').length) {
-            $(document.body).append('<div id="aegypti-intervencao"><a href="'+ wp_aedes_aegypti.destUrl +'" id="aegypti-banner" target="_blank" title="'+ wp_aedes_aegypti.title +'"><span class="aegypti-banner-text aegypti-banner-text1" >'+ wp_aedes_aegypti.text1 +'</span><span class="aegypti-banner-text aegypti-banner-text2">'+ wp_aedes_aegypti.text2 +'</span><span class="aegypti-banner-text aegypti-banner-text3">'+ wp_aedes_aegypti.text3 +'</span><span class="aegypti-banner-text aegypti-banner-text4">'+ wp_aedes_aegypti.text4 +'</span></a><a href="#" id="aegypti-close" title="'+ wp_aedes_aegypti.close +'">'+ wp_aedes_aegypti.close +'</a></div>');
-
-            $('#aegypti-intervencao #aegypti-banner').focus();
-            $('#aegypti-intervencao a').on("click", function() {
-                $(this).parent().fadeOut();
-            });
-        }
-        // Senão, apenas exibe
-        else {
-            $('#aegypti-intervencao').fadeIn();
-            $('#aegypti-intervencao #aegypti-banner').focus();
-        }
-	    
 	});
 
 	function makeNewPosition() {
