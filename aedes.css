@@ -26,3 +26,48 @@ div#zona-voo {
     100% { background-position: -300px; }
 }
 
+a#aegypti-banner {
+	background-image: url("aviso-semtexto.png");
+    display: block;
+    height: 329px;
+    position: absolute;
+    width: 939px;
+    text-decoration: none;
+    left: 20%;
+}
+
+.aegypti-banner-text {
+	color: rgb(255, 255, 255);
+    display: block;
+    float: none;
+    left: 437px;
+    line-height: 1;
+    position: relative;
+    text-align: left;
+    top: 84px;
+    width: 47%;
+}
+
+.aegypti-banner-text.aegypti-banner-text1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.aegypti-banner-text.aegypti-banner-text2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.aegypti-banner-text.aegypti-banner-text3 {
+    color: yellow;
+    font-size: 24px;
+    top: 116px;
+    width: 17%;
+}
+
+.aegypti-banner-text.aegypti-banner-text4 {
+    font-size: 30px;
+    font-style: italic;
+    left: 719px;
+    top: 74px;
+}

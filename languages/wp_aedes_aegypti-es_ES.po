@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp_aedes_aegypti Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-03 17:55-0300\n"
+"POT-Creation-Date: 2016-02-03 22:37-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jacson Passold <jacson@ethymos.com.br>\n"
 "Language-Team: \n"
@@ -25,9 +25,21 @@ msgid "Faça sua parte"
 msgstr "Haga su parte"
 
 #: ../wp-aedes-aegypti.php:22
-msgid ""
-"Não adianta apenas matar o mosquito. Não podemos deixar ele nascer. E isso "
-"depende de todos nós."
-msgstr ""
-"No sirve de nada simplemente matar el mosquito. No podemos dejar que nazca. "
-"Y depende de todos nosotros."
+msgid "Não Adianta Apenas<br/>matar o mosquito"
+msgstr "No sirve de nada<br/>única matar el mosquito"
+
+#: ../wp-aedes-aegypti.php:23
+msgid "Não podemos deixar ele nascer.<br/>E isso depende de todos nós."
+msgstr "No podemos dejar que nazca.<br/>Y depende de todos nosotros."
+
+#: ../wp-aedes-aegypti.php:24
+msgid "Saiba como fazer sua parte"
+msgstr "Aprender a hacer su parte"
+
+#: ../wp-aedes-aegypti.php:25
+msgid "#ZicaZero"
+msgstr "#ZicaCero"
+
+#: ../wp-aedes-aegypti.php:27
+msgid "Fechar"
+msgstr "Cerrar"

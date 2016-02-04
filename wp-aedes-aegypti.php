@@ -19,8 +19,12 @@ function wp_aedes_aegypti() {
 			'pluginUrl' => plugin_dir_url( __FILE__ ),
 			'destUrl' => 'http://combateaedes.saude.gov.br/',
 			'title' => __('Faça sua parte', 'wp_aedes_aegypti'),
-			'alt' => __('Não adianta apenas matar o mosquito. Não podemos deixar ele nascer. E isso depende de todos nós.', 'wp_aedes_aegypti'),
+			'text1' => __('Não Adianta Apenas<br/>matar o mosquito','wp_aedes_aegypti'),
+			'text2' => __('Não podemos deixar ele nascer.<br/>E isso depende de todos nós.','wp_aedes_aegypti'),
+			'text3' => __('Saiba como fazer sua parte','wp_aedes_aegypti'),
+			'text4' => __('#ZicaZero','wp_aedes_aegypti'),
 			'lang' => get_locale(),
+			'close' => __('Fechar', 'wp_aedes_aegypti'),
 	));
 	
 	wp_enqueue_style('wp_aedes_aegypti', plugin_dir_url(__FILE__) . 'aedes.css');
@@ -35,9 +39,6 @@ add_action( 'wp_enqueue_scripts', 'wp_aedes_aegypti' );
  */
 function wp_aedes_aegypti_load_textdomain()
 {
-	if(! load_plugin_textdomain( 'wp_aedes_aegypti', false,  '/wp-aedes-aegypti/languages' ))
-	{
-		wp_die('translate error!');
-	}
+	load_plugin_textdomain( 'wp_aedes_aegypti', false,  '/wp-aedes-aegypti/languages' );
 }
 add_action( 'plugins_loaded', 'wp_aedes_aegypti_load_textdomain' );

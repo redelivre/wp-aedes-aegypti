@@ -12,7 +12,7 @@ $(window).ready(function() {
 	'a.aegypti:hover { cursor: url("'+ wp_aedes_aegypti.pluginUrl +'/raquete.png") 30 35, pointer; }' +
 	'@keyframes play { 100% { background-position: -360px; } }' +
 	'.rotateAE { background-position: 180px; }' +
-	'@media (min-width: 940px) { body #aegypti-intervencao #aegypti-close { width: 42px; height: 42px; margin-left: 348px; top: 42px; left: 50%; } }' +
+	'@media (min-width: 940px) { body #aegypti-intervencao #aegypti-close { width: 42px; height: 42px; margin-left: 246px; top: 42px; left: 50%; } }' +
 	'#aegypti-intervencao { width: 100%; margin-top: -140px; position: fixed; top: 50%; text-align: center; }' +
 	'#aegypti-intervencao #aegypti-banner:focus { outline: none !important; }' +
 	'#aegypti-intervencao #aegypti-close { width: 4.4%; height: 12%; display: block; position: absolute; top: 12.4%; left: 87.2%; overflow: hidden; text-indent: -999999px; }' +
@@ -36,7 +36,7 @@ $(window).ready(function() {
 
                 // Caso a estrutura não tenha sido criada
                 if (!$('#aegypti-intervencao').length) {
-                    $(document.body).append('<div id="aegypti-intervencao"><a href="'+ wp_aedes_aegypti.destUrl +'" id="aegypti-banner" target="_blank" title="'+ wp_aedes_aegypti.title +'"><img src="' + wp_aedes_aegypti.pluginUrl + '/aviso-'+wp_aedes_aegypti.lang+'.png" alt="'+ wp_aedes_aegypti.alt +'" /></a><a href="#" id="aegypti-close" title="'+ wp_aedes_aegypti.close +'">'+ wp_aedes_aegypti.close +'</a></div>');
+                	$(document.body).append('<div id="aegypti-intervencao"><a href="'+ wp_aedes_aegypti.destUrl +'" id="aegypti-banner" target="_blank" title="'+ wp_aedes_aegypti.title +'"><span class="aegypti-banner-text aegypti-banner-text1" >'+ wp_aedes_aegypti.text1 +'</span><span class="aegypti-banner-text aegypti-banner-text2">'+ wp_aedes_aegypti.text2 +'</span><span class="aegypti-banner-text aegypti-banner-text3">'+ wp_aedes_aegypti.text3 +'</span><span class="aegypti-banner-text aegypti-banner-text4">'+ wp_aedes_aegypti.text4 +'</span></a><a href="#" id="aegypti-close" title="'+ wp_aedes_aegypti.close +'">'+ wp_aedes_aegypti.close +'</a></div>');
 
                     $('#aegypti-intervencao #aegypti-banner').focus();
                     $('#aegypti-intervencao a').on("click", function() {
@@ -65,6 +65,20 @@ $(window).ready(function() {
   	      }, Math.pow(i*2,2)*1000);
 	    }
 
+	    if (!$('#aegypti-intervencao').length) {
+            $(document.body).append('<div id="aegypti-intervencao"><a href="'+ wp_aedes_aegypti.destUrl +'" id="aegypti-banner" target="_blank" title="'+ wp_aedes_aegypti.title +'"><span class="aegypti-banner-text aegypti-banner-text1" >'+ wp_aedes_aegypti.text1 +'</span><span class="aegypti-banner-text aegypti-banner-text2">'+ wp_aedes_aegypti.text2 +'</span><span class="aegypti-banner-text aegypti-banner-text3">'+ wp_aedes_aegypti.text3 +'</span><span class="aegypti-banner-text aegypti-banner-text4">'+ wp_aedes_aegypti.text4 +'</span></a><a href="#" id="aegypti-close" title="'+ wp_aedes_aegypti.close +'">'+ wp_aedes_aegypti.close +'</a></div>');
+
+            $('#aegypti-intervencao #aegypti-banner').focus();
+            $('#aegypti-intervencao a').on("click", function() {
+                $(this).parent().fadeOut();
+            });
+        }
+        // Senão, apenas exibe
+        else {
+            $('#aegypti-intervencao').fadeIn();
+            $('#aegypti-intervencao #aegypti-banner').focus();
+        }
+	    
 	});
 
 	function makeNewPosition() {
